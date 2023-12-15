@@ -2,11 +2,10 @@ name: .NET Core - Release
 
 on:
   push:
-    branches: [ development ]
+    branches: [ new-analysis, development ]
   pull_request:
-    branches: [ development ]
+    branches: [ new-analysis, development ]
   workflow_dispatch:
-    
 
 jobs:
   release:
